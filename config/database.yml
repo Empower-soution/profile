@@ -1,0 +1,14 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: empower
+  password: empower
+  host: localhost
+  port: 5432
+
+development:
+  <<: *default
+  database: testdb
+
+# Warning: The database defined as "test" will be erased and
