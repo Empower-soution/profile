@@ -11,4 +11,6 @@ development:
   <<: *default
   database: testdb
 
-# Warning: The database defined as "test" will be erased and
+production:
+  <<: *default
+  database: testdb
