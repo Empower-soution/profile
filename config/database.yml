@@ -12,10 +12,8 @@ development:
   database: testdb
 
 production:
-   <<: *default
+  <<: *default
   database: testdb_production
   host: <%= ENV["database_host"] %>
   username: <%= ENV["database_username"] %>
   password: <%= ENV["database_password"] %>
-
-
